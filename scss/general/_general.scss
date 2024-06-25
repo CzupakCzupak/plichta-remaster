@@ -1,0 +1,57 @@
+*,
+*:before,
+*:after {
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+*:focus {
+	outline: none;
+}
+
+html {
+	overflow-x: clip;
+	/* overflow-x: hidden; */
+}
+
+body {
+	height: 100%;
+	position: relative;
+	font-family: "Inter", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+
+ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+button {
+	outline: none;
+	font-size: inherit;
+}
+
+label,
+button {
+	cursor: pointer;
+}
+
+img {
+	width: fit-content;
+	height: fit-content;
+	vertical-align: middle;
+	object-fit: cover;
+}
+
+.container {
+	max-width: 1432px;
+	margin: 0 auto;
+	width: 100%;
+}

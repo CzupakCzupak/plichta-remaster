@@ -1,0 +1,49 @@
+// General
+@import "general/variables";
+@import "general/typography";
+@import "general/utilities";
+@import "general/general";
+
+// Components
+@import "components/buttons";
+@import "components/cta";
+
+// Layout
+@import "layout/footer";
+@import "layout/header";
+
+.offer {
+	border-bottom: 10px solid $black;
+	position: relative;
+
+	&__links {
+	}
+
+	&__anchor {
+		padding: 18px 16px 16px 16px;
+		color: $black;
+		opacity: 0.6;
+		font-size: 16px;
+		line-height: 125%; /* 20px */
+		transition: 0.3s all;
+		&.active {
+			border-bottom: 2px solid $black;
+			opacity: 1;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__container {
+		height: 100vh;
+		margin: auto auto 50px auto;
+	}
+
+	&__ {
+		position: sticky;
+		height: 50px;
+		top: 108px;
+	}
+}
