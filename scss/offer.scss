@@ -1,4 +1,5 @@
 // General
+@import "general/fonts";
 @import "general/variables";
 @import "general/typography";
 @import "general/utilities";
@@ -11,13 +12,10 @@
 // Layout
 @import "layout/footer";
 @import "layout/header";
+@import "layout/maps";
 
 .offer {
-	border-bottom: 10px solid $black;
 	position: relative;
-
-	&__links {
-	}
 
 	&__anchor {
 		padding: 18px 16px 16px 16px;
@@ -26,6 +24,7 @@
 		font-size: 16px;
 		line-height: 125%; /* 20px */
 		transition: 0.3s all;
+		display: inline-block;
 		&.active {
 			border-bottom: 2px solid $black;
 			opacity: 1;
@@ -37,13 +36,173 @@
 	}
 
 	&__container {
-		height: 100vh;
-		margin: auto auto 50px auto;
+		display: flex;
+		gap: 16px;
 	}
 
-	&__ {
+	&__img {
+		width: 100%;
+		&-box {
+			margin-left: -210px;
+			max-width: 1041px;
+		}
+	}
+
+	&__main {
 		position: sticky;
-		height: 50px;
 		top: 108px;
+		width: 100%;
+	}
+
+	&__name {
+		color: $black;
+		font-size: 50px;
+		font-weight: 800;
+		line-height: 62px; /* 124% */
+	}
+
+	&__desc,
+	&__number {
+		color: $typo-gray;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 140%; /* 22.4px */
+	}
+
+	&__desc {
+	}
+
+	&__number {
+		&-box {
+		}
+	}
+
+	&__location {
+	}
+
+	&__price {
+		color: $orange;
+		font-size: 38px;
+		font-weight: 800;
+		line-height: 48px; /* 126.316% */
+		&-box {
+		}
+
+		&-type {
+			color: $black;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 28px; /* 175% */
+		}
+	}
+
+	&__box {
+		background-color: $bg-gray;
+		&-big {
+			padding: 40px;
+		}
+		&-sm {
+			align-self: stretch;
+			padding: 24px 40px;
+		}
+		&-text {
+			color: $black;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 28px; /* 175% */
+		}
+	}
+
+	&__col {
+		&-r {
+			width: 100%;
+			max-width: 589px;
+		}
+	}
+
+	&__data {
+		color: $black;
+		padding-right: 16px;
+		// flex-shrink: 0;
+		&-box {
+			row-gap: 24px;
+		}
+
+		&-name {
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px; /* 150% */
+		}
+
+		&-value {
+			font-weight: 800;
+		}
+	}
+}
+
+.equipment {
+	background-color: $bg-gray;
+	padding: 72px 0;
+
+	&__row {
+		color: $typo-gray;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 150%; /* 24px */
+		padding-right: 16px;
+		&::before {
+			content: url("../img/icons/marker.svg");
+			height: 20px;
+			width: 20px;
+		}
+
+		&s {
+			row-gap: 24px;
+			max-width: 831px;
+		}
+	}
+}
+
+.gallery {
+	background-color: $kv-green;
+	padding: 72px 0;
+
+	&__splide {
+		box-sizing: border-box;
+		width: 100%;
+		width: 100%;
+		&-list {
+			display: flex;
+		}
+	}
+
+	&__container {
+		padding-left: calc((100vw - 1852px) / 2);
+	}
+
+	&__arrow {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 48px;
+		height: 48px;
+		flex-shrink: 0;
+		border-radius: 4px;
+		opacity: 1;
+		background-color: $white;
+		&:hover {
+			background-color: $white-80;
+		}
+	}
+
+	&__progress {
+		background: #ffffff66;
+	}
+
+	&__progress-bar {
+		background: $white;
+		height: 2px;
+		transition: width 0.3s ease;
+		width: 0;
 	}
 }

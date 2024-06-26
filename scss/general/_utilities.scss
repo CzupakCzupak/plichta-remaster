@@ -14,6 +14,10 @@
 	align-items: flex-start;
 }
 
+.ai-fe {
+	align-items: flex-end;
+}
+
 .jc-e {
 	justify-content: flex-end;
 }
@@ -39,7 +43,7 @@
 }
 
 .fw-800 {
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .fw-700 {
@@ -216,64 +220,70 @@
 
 /* ------GAP------ */
 
-.gap-5 {
-	gap: 5px;
-}
+.gap {
+	&-4 {
+		gap: 4px;
+	}
 
-.gap-6 {
-	gap: 6px;
-}
+	&-5 {
+		gap: 5px;
+	}
 
-.gap-8 {
-	gap: 8px;
-}
+	&-6 {
+		gap: 6px;
+	}
 
-.gap-10 {
-	gap: 10px;
-}
+	&-8 {
+		gap: 8px;
+	}
 
-.gap-12 {
-	gap: 12px;
-}
+	&-10 {
+		gap: 10px;
+	}
 
-.gap-13 {
-	gap: 13px;
-}
+	&-12 {
+		gap: 12px;
+	}
 
-.gap-14 {
-	gap: 14px;
-}
+	&-13 {
+		gap: 13px;
+	}
 
-.gap-16 {
-	gap: 16px;
-}
+	&-14 {
+		gap: 14px;
+	}
 
-.gap-20 {
-	gap: 20px;
-}
+	&-16 {
+		gap: 16px;
+	}
 
-.gap-24 {
-	gap: 24px;
-}
+	&-20 {
+		gap: 20px;
+	}
 
-.gap-32 {
-	gap: 32px;
-}
+	&-24 {
+		gap: 24px;
+	}
 
-.gap-42 {
-	gap: 42px;
-}
+	&-32 {
+		gap: 32px;
+	}
 
-.gap-48 {
-	gap: 48px;
-}
+	&-42 {
+		gap: 42px;
+	}
 
-.gap-64 {
-	gap: 64px;
-}
+	&-48 {
+		gap: 48px;
+	}
 
-.gap-159 {
-	gap: 159px;
+	&-64 {
+		gap: 64px;
+	}
+
+	&-159 {
+		gap: 159px;
+	}
 }
 
 .ta-c {
@@ -391,4 +401,13 @@
 
 .mg-8 {
 	margin: 8px;
+}
+
+.col__3 {
+	max-width: 33.333%;
+	flex: 0 0 33.333%;
+}
+
+.max-w-300 {
+	max-width: 300px;
 }

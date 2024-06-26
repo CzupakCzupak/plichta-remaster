@@ -4,9 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Oferta</title>
+		<link rel="stylesheet" href="css/splide.min.css" />
 		<link rel="stylesheet" href="css/offer.css" />
 	</head>
-	<body style="height: 200vh; background: #eee">
+	<body>
 		<header class="header header-js d-f ai-c jc-b">
 			<div class="header__container container rel">
 				<div class="header__logo">
@@ -156,7 +157,7 @@
 		</header>
 		<main>
 			<div class="offer">
-				<div class="offer__container container">
+				<div class="container">
 					<div class="offer__links">
 						<a href="#information" class="offer__anchor uppercase fw-600 active"
 							>Informacje</a
@@ -168,11 +169,414 @@
 						<a href="#description" class="offer__anchor uppercase fw-600">Opis</a>
 						<a href="#contact" class="offer__anchor uppercase fw-600">Kontakt</a>
 					</div>
-					<div class="offer__chuj">im following</div>
+				</div>
+				<div class="offer__container container">
+					<div class="offer__col mb-72">
+						<div class="offer__img-box mb-72">
+							<img
+								src="img/offer-img.png"
+								alt="Offer image main"
+								width="100%"
+								height="100%"
+								class="offer__img"
+							/>
+						</div>
+						<div class="offer__data-box d-f f-w">
+							<div class="offer__data col__3 d-f fd-c gap-8">
+								<div class="offer__data-name">Przebieg</div>
+								<div class="offer__data-value heading__quinary">7 km</div>
+							</div>
+							<div class="offer__data col__3 d-f fd-c gap-8">
+								<div class="offer__data-name">Pojemność</div>
+								<div class="offer__data-value heading__quinary">1498 cm3</div>
+							</div>
+							<div class="offer__data col__3 d-f fd-c gap-8">
+								<div class="offer__data-name">Moc</div>
+								<div class="offer__data-value heading__quinary">
+									130 <span class="uppercase">km</span>
+								</div>
+							</div>
+							<div class="offer__data col__3 d-f fd-c gap-8">
+								<div class="offer__data-name">Skrzynia</div>
+								<div class="offer__data-value heading__quinary">Automat</div>
+							</div>
+							<div class="offer__data col__3 d-f fd-c gap-8">
+								<div class="offer__data-name">Rodzaj paliwa</div>
+								<div class="offer__data-value heading__quinary">Benzyna</div>
+							</div>
+							<div class="offer__data col__3 d-f fd-c gap-8">
+								<div class="offer__data-name">Nadwozie</div>
+								<div class="offer__data-value heading__quinary">Kompakt</div>
+							</div>
+							<div class="offer__data col__3 d-f fd-c gap-8">
+								<div class="offer__data-name">Liczba miejsc</div>
+								<div class="offer__data-value heading__quinary">5</div>
+							</div>
+							<div class="offer__data col__3 d-f fd-c gap-8">
+								<div class="offer__data-name">Liczba drzwi</div>
+								<div class="offer__data-value heading__quinary">5</div>
+							</div>
+							<div class="offer__data col__3 d-f fd-c gap-8">
+								<div class="offer__data-name">Rok produkcji</div>
+								<div class="offer__data-value heading__quinary">2022</div>
+							</div>
+						</div>
+					</div>
+					<div class="offer__col offer__col-r">
+						<div class="offer__main d-f fd-c gap-20">
+							<div class="offer__box offer__box-big">
+								<h1 class="offer__name mb-8">SEAT Leon</h1>
+								<div class="offer__desc mb-8">
+									SEAT Leon Style 1.5 TSI 130 KM Manual Kombi
+								</div>
+								<div class="offer__number d-f gap-12 ai-c mb-24">
+									<div class="offer__number-box">Nr oferty: 6091708456</div>
+									<div class="offer__location d-f gap-8 ai-c">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+										>
+											<path
+												d="M11.9998 9.5C11.1713 9.5 10.4998 10.1716 10.4998 11V11.01C10.4998 11.8384 11.1713 12.51 11.9998 12.51H12.0098C12.8382 12.51 13.5098 11.8384 13.5098 11.01V11C13.5098 10.1716 12.8382 9.5 12.0098 9.5H11.9998Z"
+												fill="#747468"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M17.7069 5.29365C14.5549 2.1417 9.44462 2.1417 6.29267 5.29365C3.14073 8.4456 3.14072 13.5559 6.29267 16.7079L11.9998 22.415L17.7069 16.7079C20.8588 13.5559 20.8588 8.4456 17.7069 5.29365ZM7.70689 6.70786C10.0778 4.33696 13.9218 4.33696 16.2927 6.70786C18.6636 9.07876 18.6636 12.9228 16.2927 15.2937L11.9998 19.5865L7.70689 15.2936C5.33598 12.9227 5.33599 9.07876 7.70689 6.70786Z"
+												fill="#747468"
+											/>
+										</svg>
+										Gdańsk
+									</div>
+								</div>
+								<div class="offer__price-box">
+									<p class="offer__price-type">Cena brutto</p>
+									<h2 class="offer__price">130 900 zł</h2>
+								</div>
+							</div>
+							<div class="offer__box offer__box-sm w-100 d-f jc-b ai-c">
+								<p class="offer__box-text">Samochód dostępny od ręki</p>
+								<a href="#cta" class="btn btn__primary-black btn-big">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+										class="btn__icon-white"
+									>
+										<g id="icons/24x24/mail">
+											<path
+												id="Vector"
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M2 4.99983V4H2.99983C2.99971 4 2.99994 4 2.99983 4H20.9998C20.9997 4 20.9999 4 20.9998 4H22V4.99902C22 4.99967 22 5.00033 22 5.00098V20H2V4.99983C2 4.99994 2 4.99971 2 4.99983ZM4 7.41421V18H20V7.41421L12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L4 7.41421ZM18.5858 6H5.41421L12 12.5858L18.5858 6Z"
+											/>
+										</g>
+									</svg>
+									Zapytaj o ofertę
+								</a>
+							</div>
+							<div class="offer__box offer__box-sm w-100 d-f jc-b ai-c">
+								<a href="#cta" class="btn btn__secondary-black btn-big">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+										class="btn__icon-black"
+									>
+										<g id="icons/24x24/phone">
+											<path
+												id="Vector"
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M18.9707 18.9672C11.4837 18.4749 5.49581 12.487 5.00347 5.00001L8.9707 5.00001C8.97168 5.00001 8.97056 4.99995 8.9707 5.00001C8.97173 5.00044 8.97757 5.003 8.98565 5.01083C9.00361 5.02826 9.02102 5.059 9.0248 5.09707C9.10345 5.89047 9.26646 6.6595 9.50482 7.39481L7.93267 8.96698L8.23816 9.60534C9.5192 12.2822 11.6885 14.4515 14.3654 15.7326L15.0037 16.038L16.5759 14.4659C17.3112 14.7042 18.0802 14.8673 18.8736 14.9459C18.9117 14.9497 18.9425 14.9671 18.9599 14.9851C18.9677 14.9931 18.9703 14.9987 18.9707 14.9997C18.9708 14.9998 18.9707 14.9987 18.9707 14.9997L18.9707 18.9672ZM18.909 20.9674C20.0755 21.0393 20.9707 20.0881 20.9707 19L20.9707 15C20.9707 13.8731 20.0696 13.0547 19.0709 12.9557C18.2352 12.8728 17.4337 12.6758 16.6819 12.3805L16.0723 12.141L14.6071 13.6062C12.8311 12.6123 11.3584 11.1396 10.3645 9.36358L11.8297 7.89839L11.5902 7.2888C11.2949 6.53697 11.0979 5.73554 11.015 4.89978C10.9161 3.90114 10.0976 3.00001 8.9707 3.00001L4.9707 3.00001C3.88265 3.00001 2.9314 3.89524 3.00335 5.06175C3.53031 13.6054 10.3653 20.4404 18.909 20.9674Z"
+											/>
+										</g>
+									</svg>
+
+									Pokaż telefon
+								</a>
+								<a href="#cta" class="btn btn__secondary-black btn-big">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="25"
+										height="24"
+										viewBox="0 0 25 24"
+										fill="none"
+										class="btn__icon-black"
+									>
+										<path
+											d="M12.7498 9.5C11.9213 9.5 11.2498 10.1716 11.2498 11V11.01C11.2498 11.8384 11.9213 12.51 12.7498 12.51H12.7598C13.5882 12.51 14.2598 11.8384 14.2598 11.01V11C14.2598 10.1716 13.5882 9.5 12.7598 9.5H12.7498Z"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M18.4569 5.29365C15.3049 2.1417 10.1946 2.1417 7.04267 5.29365C3.89073 8.4456 3.89072 13.5559 7.04267 16.7079L12.7498 22.415L18.4569 16.7079C21.6088 13.5559 21.6088 8.4456 18.4569 5.29365ZM8.45689 6.70786C10.8278 4.33696 14.6718 4.33696 17.0427 6.70786C19.4136 9.07876 19.4136 12.9228 17.0427 15.2937L12.7498 19.5865L8.45689 15.2936C6.08598 12.9227 6.08599 9.07876 8.45689 6.70786Z"
+										/>
+									</svg>
+									Sprawdź dojazd
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="equipment">
+				<div class="equipment__container container">
+					<h3 class="heading__tertiary mb-48 clr-black">Wyposażenie</h3>
+					<div class="equipment__rows ai-fs f-w d-f w-100 mb-20">
+						<div class="equipment__row d-f ai-fs gap-8 col__3">ABS</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">Alufelgi</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							ASR (kontrola trakcji)
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">Bluetooth</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">Centralny zamek</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">Czujnik deszczu</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">Czujnik zmierzchu</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							Elektryczne szyby przednie
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							Elektryczne szyby tylne
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							Elektrycznie ustawiane lusterka
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							ESP (stabilizacja toru jazdy)
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">Gniazdo USB</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">Immobilizer</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">Isofix</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							Klimatyzacja automatyczna
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							Komputer pokładowy
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							Kurtyny powietrzne
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">Nawigacja GPS</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							Ogranicznik prędkości
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							Podgrzewane przednie siedzenia
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							Poduszka powietrzna kierowcy
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							Poduszki boczne przednie
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">Radio fabryczne</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">System Start-Stop</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">
+							Wspomaganie kierownicy
+						</div>
+						<div class="equipment__row d-f ai-fs gap-8 col__3">Opony*</div>
+					</div>
+				</div>
+			</div>
+			<div class="gallery">
+				<div class="container">
+					<h3 class="heading__tertiary mb-48 clr-white">Galeria</h3>
+				</div>
+				<div class="gallery__container mb-72">
+					<section
+						class="gallery__splide gallery__splide-js splide"
+						aria-label="Gallery for this offer"
+					>
+						<div class="splide__arrows">
+							<button class="splide__arrow splide__arrow--prev gallery__arrow">
+								<svg
+									width="25"
+									height="24"
+									viewBox="0 0 25 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g id="icons/24x24/arrow-right">
+										<g id="Vector">
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M8.5 7.02858L13.4436 11.9989L8.5 16.9703V16.9725L10.0212 18.5L16.5 11.9989L10.0212 5.5L8.5 7.02641V7.02858Z"
+												fill="#190F14"
+											/>
+										</g>
+									</g>
+								</svg>
+							</button>
+							<button class="splide__arrow splide__arrow--next gallery__arrow">
+								<svg
+									width="25"
+									height="24"
+									viewBox="0 0 25 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g id="icons/24x24/arrow-right">
+										<g id="Vector">
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M8.5 7.02858L13.4436 11.9989L8.5 16.9703V16.9725L10.0212 18.5L16.5 11.9989L10.0212 5.5L8.5 7.02641V7.02858Z"
+												fill="#190F14"
+											/>
+										</g>
+									</g>
+								</svg>
+							</button>
+						</div>
+
+						<div class="splide__track">
+							<ul class="splide__list gallery__splide-list">
+								<li class="gallery__slide splide__slide">
+									<img
+										src="img/offer-img-gallery-1.png"
+										alt="Car image"
+										class="gallery__img"
+										loading="lazy"
+										width="100%"
+										height="auto"
+									/>
+								</li>
+								<li class="gallery__slide splide__slide">
+									<img
+										src="img/offer-img-gallery-2.png"
+										alt="Car image"
+										class="gallery__img"
+										loading="lazy"
+										width="100%"
+										height="auto"
+									/>
+								</li>
+								<li class="gallery__slide splide__slide">
+									<img
+										src="img/offer-img-gallery-1.png"
+										alt="Car image"
+										class="gallery__img"
+										loading="lazy"
+										width="100%"
+										height="auto"
+									/>
+								</li>
+								<li class="gallery__slide splide__slide">
+									<img
+										src="img/offer-img-gallery-2.png"
+										alt="Car image"
+										class="gallery__img"
+										loading="lazy"
+										width="100%"
+										height="auto"
+									/>
+								</li>
+								<li class="gallery__slide splide__slide">
+									<img
+										src="img/offer-img-gallery-1.png"
+										alt="Car image"
+										class="gallery__img"
+										loading="lazy"
+										width="100%"
+										height="auto"
+									/>
+								</li>
+								<li class="gallery__slide splide__slide">
+									<img
+										src="img/offer-img-gallery-2.png"
+										alt="Car image"
+										class="gallery__img"
+										loading="lazy"
+										width="100%"
+										height="auto"
+									/>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+				<div class="container">
+					<div class="gallery__progress">
+						<div class="gallery__progress-bar"></div>
+					</div>
+				</div>
+			</div>
+			<div class="maps rel">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2313.9017797142283!2d18.41795827710666!3d54.55285688376959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda45b5f1d3923%3A0x15d6a7defbf1b45c!2sMorska%20318%2C%2081-006%20Gdynia!5e0!3m2!1spl!2spl!4v1719386126658!5m2!1spl!2spl"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+					class="maps__background"
+				></iframe>
+				<div class="maps__container rel d-f jc-e w-100">
+					<div class="maps__box">
+						<div class="max-w-300">
+							<div class="maps__box-top">
+								<p class="heading__quinary fw-800 mb-8">SEAT Plichta Gdynia</p>
+								<p class="maps__location fw-500">Morska 318, 81-006 Gdynia</p>
+							</div>
+							<div class="maps__box-bottom">
+								<p class="maps__location fw-800 maps__location-26 mb-16">
+									Godziny otwarcia
+								</p>
+								<div class="maps__hours d-f fd-c gap-4">
+									<p class="maps__location fw-800 maps__location-26">Salon</p>
+									<div class="d-f gap-8 jc-b maps__hours-w">
+										<p class="maps__location fw-500">pon-pt:</p>
+										<p class="maps__location fw-500">9:00 - 19:00</p>
+									</div>
+									<div class="d-f gap-8 jc-b maps__hours-w">
+										<p class="maps__location fw-500">sob:</p>
+										<p class="maps__location fw-500">9:00 - 15:00</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a
+							href="https://www.google.pl/maps/place/Morska+318,+81-006+Gdynia/@54.5528569,18.4179583,17z/data=!3m1!4b1!4m6!3m5!1s0x46fda45b5f1d3923:0x15d6a7defbf1b45c!8m2!3d54.5528538!4d18.4205332!16s%2Fg%2F11khztptbt?entry=ttu"
+							class="btn btn__secondary-black"
+						>
+							<svg
+								width="25"
+								height="24"
+								viewBox="0 0 25 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class="btn__icon-black"
+							>
+								<g id="icons/24x24/localisation">
+									<g id="Vector">
+										<path
+											d="M12.7498 9.5C11.9213 9.5 11.2498 10.1716 11.2498 11V11.01C11.2498 11.8384 11.9213 12.51 12.7498 12.51H12.7598C13.5882 12.51 14.2598 11.8384 14.2598 11.01V11C14.2598 10.1716 13.5882 9.5 12.7598 9.5H12.7498Z"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M18.4569 5.29365C15.3049 2.1417 10.1946 2.1417 7.04267 5.29365C3.89073 8.4456 3.89072 13.5559 7.04267 16.7079L12.7498 22.415L18.4569 16.7079C21.6088 13.5559 21.6088 8.4456 18.4569 5.29365ZM8.45689 6.70786C10.8278 4.33696 14.6718 4.33696 17.0427 6.70786C19.4136 9.07876 19.4136 12.9228 17.0427 15.2937L12.7498 19.5865L8.45689 15.2936C6.08598 12.9227 6.08599 9.07876 8.45689 6.70786Z"
+										/>
+									</g>
+								</g>
+							</svg>
+							Sprawdź dojazd
+						</a>
+					</div>
 				</div>
 			</div>
 		</main>
 		<footer class="footer"></footer>
+		<script src="javascript/splide.min.js"></script>
 		<script src="javascript/core.js"></script>
 		<script src="javascript/offer.js"></script>
 	</body>
