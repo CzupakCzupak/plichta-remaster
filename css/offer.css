@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "SEAT BCN";
   src: url("../fonts/SEATBCN-Regular.woff2") format("woff2");
@@ -30,6 +31,22 @@
   color: #190f14;
 }
 
+.clr-black-f {
+  color: #0f0f0f;
+}
+
+.clr-blue {
+  color: #00e;
+}
+
+.clr-typo-gray {
+  color: #747468;
+}
+
+.clr-orange {
+  color: #ea5d1a;
+}
+
 .heading__primary {
   font-size: 64px;
   line-height: 72px;
@@ -43,7 +60,7 @@
   line-height: 109%;
   font-weight: 800;
 }
-.heading__quartenary {
+.heading__quaternary {
   font-size: 38px;
   line-height: 48px;
 }
@@ -410,14 +427,17 @@
 .underline {
   text-decoration: underline;
 }
+.underline-hov:hover {
+  text-decoration: underline;
+}
 
 .img-width {
   width: 100%;
 }
 
-.margin-auto {
-  display: block;
-  margin: 0 auto;
+.mg-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rel {
@@ -440,9 +460,29 @@
   margin: 8px;
 }
 
+.col__2 {
+  max-width: 50%;
+  flex: 0 0 calc(50% - 8px);
+}
 .col__3 {
   max-width: 33.333%;
   flex: 0 0 33.333%;
+}
+.col__cta-last {
+  margin-left: 8px;
+}
+.col__cta-first {
+  margin-right: 8px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.kerning-none {
+  font-kerning: none;
 }
 
 .max-w-300 {
@@ -470,6 +510,7 @@ html {
 body {
   height: 100%;
   position: relative;
+  font-kerning: none;
   font-family: "SEAT BCN", sans-serif;
 }
 
@@ -505,7 +546,7 @@ img {
 }
 
 .container {
-  max-width: 1432px;
+  max-width: 1436px;
   margin: 0 auto;
   width: 100%;
 }
@@ -523,6 +564,8 @@ img {
   gap: 12px;
   width: -moz-fit-content;
   width: fit-content;
+  outline: none;
+  border: none;
 }
 .btn:hover {
   cursor: pointer;
@@ -583,6 +626,107 @@ img {
 }
 .btn__icon-white:hover, .btn__icon-black:hover {
   cursor: pointer;
+}
+
+.cta {
+  padding: 88px 0;
+  background-color: #f3f3f0;
+  font-family: "SEAT BCN";
+}
+.cta__container {
+  max-width: 953px;
+  width: 100%;
+  margin: 0 auto;
+}
+.cta__headline {
+  max-width: 710px;
+  text-align: center;
+}
+.cta__subheading {
+  color: var(--seat-new-black, #190f14);
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px; /* 160% */
+  letter-spacing: 0.112px;
+}
+.cta__heading {
+  color: #0f0f0f;
+  text-align: center;
+  font-kerning: none;
+  font-family: "SEAT BCN";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 750;
+  line-height: 109%; /* 52.32px */
+}
+.cta__row-input {
+  padding: 12px 20px;
+}
+.cta__row-textarea {
+  padding: 14px 20px;
+  height: 184px;
+  resize: vertical;
+}
+.cta__row-input, .cta__row-textarea {
+  color: #190f14;
+  border-radius: 2px;
+  border: 1px solid #e8e8e8;
+  background: #ffffff;
+  font-size: 16px;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 0.112px;
+  font-family: "SEAT BCN";
+}
+.cta__consent {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+.cta__checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #e8e8e8;
+  background: #ffffff;
+  transition: all 0.3s;
+}
+.cta__checkbox-container {
+  padding-left: 32px;
+}
+.cta__checkbox::before {
+  content: url("/img/icons/check.svg");
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+}
+.cta__checkbox.active {
+  background-color: #ea5d1a;
+}
+.cta__checkbox.active::before {
+  opacity: 1;
+  visibility: visible;
+}
+.cta__label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px; /* 131.25% */
+}
+
+.footer {
+  padding: 64px 0 52px;
+  background-color: #33302e;
+}
+.footer__row {
+  border-bottom: 1px solid #82807f;
+  gap: 16px;
+}
+.footer__col {
+  max-width: 226px;
+  height: 100px;
+  background-color: red;
 }
 
 .header {
@@ -729,8 +873,23 @@ img {
   margin-bottom: 153px;
 }
 
+.clause {
+  background-color: #fafaf9;
+}
+.clause__text {
+  color: rgba(15, 15, 15, 0.6);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.112px;
+}
+
 .offer {
   position: relative;
+  padding-bottom: 72px;
+}
+.offer__spacer {
+  padding: 72px 0;
 }
 .offer__anchor {
   padding: 18px 16px 16px 16px;
@@ -776,12 +935,6 @@ img {
   font-weight: 400;
   line-height: 140%; /* 22.4px */
 }
-.offer__price {
-  color: #ea5d1a;
-  font-size: 38px;
-  font-weight: 800;
-  line-height: 48px; /* 126.316% */
-}
 .offer__price-type {
   color: #190f14;
   font-size: 16px;
@@ -826,7 +979,6 @@ img {
 
 .equipment {
   background-color: #f3f3f0;
-  padding: 72px 0;
 }
 .equipment__row {
   color: #747468;
@@ -847,7 +999,6 @@ img {
 
 .gallery {
   background-color: #438a9c;
-  padding: 72px 0;
 }
 .gallery__splide {
   box-sizing: border-box;
@@ -882,4 +1033,49 @@ img {
   height: 2px;
   transition: width 0.3s ease;
   width: 0;
+}
+
+.description__text {
+  max-width: 831px;
+  color: #0f0f0f;
+  font-size: 16px;
+  line-height: 28px; /* 150% */
+}
+
+.similar__offer {
+  max-width: 468px;
+  width: 100%;
+  border: 1px solid #e8e8e8;
+}
+.similar__state-used::before {
+  content: "Używany";
+  background-color: #f3f3f0;
+  color: #190f14;
+}
+.similar__state-new::before {
+  content: "Nowy";
+  background-color: #190f14;
+  color: #ffffff;
+}
+.similar__state-new::before, .similar__state-used::before {
+  font-size: 13px;
+  line-height: 18px; /* 138.462% */
+  padding: 3px 8px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  border-radius: 2px;
+}
+.similar__desc {
+  padding: 24px;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 14px;
+  line-height: 140%; /* 19.6px */
+}
+.similar__desc-heading {
+  font-size: 20px;
+  line-height: 32px; /* 160% */
+}
+.similar__price {
+  padding: 20px 24px;
 }/*# sourceMappingURL=offer.css.map */

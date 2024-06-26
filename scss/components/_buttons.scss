@@ -10,7 +10,8 @@
 	flex-shrink: 0;
 	gap: 12px;
 	width: fit-content;
-
+	outline: none;
+	border: none;
 	&:hover {
 		cursor: pointer;
 	}

@@ -1,5 +1,8 @@
 $black: #190f14;
+$black-f: #0f0f0f;
 $black-80: #190f14cc;
+$black-3: #33302e;
+
 $typo-gray: #747468;
 $light-gray: #e1e1e1;
 $border-gray: #e8e8e8;
@@ -10,6 +13,8 @@ $orange-hover: #f08d5f;
 
 $kv-green: #438a9c;
 
+$blue: #00e;
+
 $white: #ffffff;
 $white-80: #ffffffcc;
 
@@ -19,4 +24,20 @@ $white-80: #ffffffcc;
 
 .clr-black {
 	color: $black;
+}
+
+.clr-black-f {
+	color: $black-f;
+}
+
+.clr-blue {
+	color: $blue;
+}
+
+.clr-typo-gray {
+	color: $typo-gray;
+}
+
+.clr-orange {
+	color: $orange;
 }

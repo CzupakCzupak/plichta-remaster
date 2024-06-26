@@ -13,9 +13,15 @@
 @import "layout/footer";
 @import "layout/header";
 @import "layout/maps";
+@import "layout/clause";
 
 .offer {
+	&__spacer {
+		padding: 72px 0;
+	}
+
 	position: relative;
+	padding-bottom: 72px;
 
 	&__anchor {
 		padding: 18px 16px 16px 16px;
@@ -81,10 +87,6 @@
 	}
 
 	&__price {
-		color: $orange;
-		font-size: 38px;
-		font-weight: 800;
-		line-height: 48px; /* 126.316% */
 		&-box {
 		}
 
@@ -142,7 +144,6 @@
 
 .equipment {
 	background-color: $bg-gray;
-	padding: 72px 0;
 
 	&__row {
 		color: $typo-gray;
@@ -165,7 +166,6 @@
 
 .gallery {
 	background-color: $kv-green;
-	padding: 72px 0;
 
 	&__splide {
 		box-sizing: border-box;
@@ -204,5 +204,71 @@
 		height: 2px;
 		transition: width 0.3s ease;
 		width: 0;
+	}
+}
+
+.description {
+	&__text {
+		max-width: 831px;
+		color: $black-f;
+		font-size: 16px;
+		line-height: 28px; /* 150% */
+	}
+}
+
+.similar {
+	&__offer {
+		max-width: 468px;
+		width: 100%;
+		border: 1px solid $border-gray;
+	}
+
+	&__img {
+	}
+
+	&__state {
+		&-used {
+			&::before {
+				content: "Używany";
+				background-color: $bg-gray;
+				color: $black;
+			}
+		}
+
+		&-new {
+			&::before {
+				content: "Nowy";
+				background-color: $black;
+				color: $white;
+			}
+		}
+
+		&-new,
+		&-used {
+			&::before {
+				font-size: 13px;
+				line-height: 18px; /* 138.462% */
+				padding: 3px 8px;
+				position: absolute;
+				top: 16px;
+				left: 16px;
+				border-radius: 2px;
+			}
+		}
+	}
+
+	&__desc {
+		padding: 24px;
+		border-bottom: 1px solid $border-gray;
+		&-heading {
+			font-size: 20px;
+			line-height: 32px; /* 160% */
+		}
+		font-size: 14px;
+		line-height: 140%; /* 19.6px */
+	}
+
+	&__price {
+		padding: 20px 24px;
 	}
 }

@@ -1,0 +1,14 @@
+.footer {
+	padding: 64px 0 52px;
+	background-color: $black-3;
+	&__row {
+		border-bottom: 1px solid #82807f;
+		gap: 16px;
+	}
+
+	&__col {
+		max-width: 226px;
+		height: 100px;
+		background-color: red;
+	}
+}
