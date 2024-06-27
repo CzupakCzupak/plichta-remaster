@@ -45,10 +45,9 @@ button {
 }
 
 img {
-	width: fit-content;
-	height: fit-content;
 	vertical-align: middle;
 	object-fit: cover;
+	object-position: center;
 }
 
 .container {

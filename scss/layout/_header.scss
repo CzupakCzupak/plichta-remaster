@@ -58,15 +58,7 @@
 	}
 }
 
-@media (max-width: 1440px) {
-	.header {
-		&__container {
-			padding: 0 16px;
-		}
-	}
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
 	.header {
 		padding: 8px 0;
 		&__nav {
