@@ -10,6 +10,9 @@
 	],
 	"prettier.tabWidth": 1,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[css]": {
+		"editor.defaultFormatter": ""
+	},
 	"editor.formatOnSave": true,
 	"files.autoSave": "onFocusChange",
 	"editor.tabSize": 3

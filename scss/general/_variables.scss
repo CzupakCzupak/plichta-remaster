@@ -6,6 +6,7 @@ $black-3: #33302e;
 $typo-gray: #747468;
 $light-gray: #e1e1e1;
 $border-gray: #e8e8e8;
+$footer-border-gray: #82807f;
 $bg-gray: #f3f3f0;
 
 $orange: #ea5d1a;
@@ -20,6 +21,10 @@ $white-80: #ffffffcc;
 
 .clr-white {
 	color: $white;
+}
+
+.clr-white-80 {
+	color: $white-80;
 }
 
 .clr-black {
