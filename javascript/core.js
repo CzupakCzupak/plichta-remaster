@@ -3,12 +3,16 @@ const hamburgerJs = document.querySelectorAll(".jsHamburger"),
 	header = document.querySelector(".jsHeader"),
 	shadow = document.querySelector(".jsHeaderShadow");
 
+// Hamburger functionality
+
 const hamburgerToggle = () => {
 	if (header) {
 		nav.classList.toggle("active");
 		shadow.classList.toggle("active");
 	}
 };
+
+// Header shadow when scrolling
 
 window.addEventListener("scroll", () => {
 	if (header) {
@@ -20,6 +24,8 @@ window.addEventListener("scroll", () => {
 	}
 });
 
+// Remove hamburger on desktop
+
 window.addEventListener("resize", () => {
 	if (window.innerWidth >= 1000) {
 		if (header) {
@@ -28,6 +34,8 @@ window.addEventListener("resize", () => {
 		}
 	}
 });
+
+// Links Scroll
 
 const scrollingLinks = document.querySelectorAll(".jsScroll");
 if (scrollingLinks) {
@@ -64,6 +72,8 @@ if (scrollingLinks) {
 		})
 	);
 }
+
+// Functions initialization
 
 hamburgerJs.forEach((item) => {
 	item.addEventListener("click", hamburgerToggle);

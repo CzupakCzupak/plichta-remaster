@@ -35,6 +35,7 @@
 
 	&__row {
 		&-input {
+			max-height: 48px;
 			padding: 12px 20px;
 		}
 
@@ -115,10 +116,22 @@
 @media (max-width: 1200px) {
 }
 @media (max-width: 1024px) {
+	.cta {
+		padding: 48px 0;
+
+		&__subheading {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		&__ask {
+			font-size: 14px;
+			line-height: 30px; /* 214.286% */
+		}
+	}
 }
 @media (max-width: 768px) {
 	.cta {
-		padding: 48px 0;
 		&__row {
 			flex-wrap: nowrap;
 			flex-direction: column;
@@ -136,21 +149,18 @@
 		&__consent,
 		&__label {
 			font-size: 13px;
+		}
+
+		&__consent {
 			line-height: 24px;
+		}
+
+		&__label {
+			line-height: 15px;
 		}
 
 		&__headline {
 			margin-bottom: 48px;
-		}
-
-		&__subheading {
-			font-size: 16px;
-			line-height: 24px;
-		}
-
-		&__ask {
-			font-size: 14px;
-			line-height: 30px; /* 214.286% */
 		}
 	}
 }

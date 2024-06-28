@@ -484,3 +484,21 @@
 		transition-property: fill;
 	}
 }
+
+@media (max-width: 768px) {
+	.md {
+		&--col__2 {
+			max-width: 50%;
+			flex: 0 0 50%;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.sm {
+		&--col__1 {
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
+	}
+}

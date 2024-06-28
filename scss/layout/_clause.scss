@@ -8,3 +8,11 @@
 		letter-spacing: 0.112px;
 	}
 }
+
+@media (max-width: 576px) {
+	.clause {
+		&__text {
+			line-height: 22px;
+		}
+	}
+}

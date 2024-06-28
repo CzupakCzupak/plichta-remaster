@@ -4,6 +4,15 @@ let gallery = new Splide(".gallery__splide-js", {
 	perMove: 2,
 	type: "loop",
 	pagination: false,
+	breakpoints: {
+		1200: {
+			perMove: 1,
+		},
+		768: {
+			fixedWidth: false,
+			arrows: false,
+		},
+	},
 });
 
 let galleryBar = document.querySelector(".gallery__progress-bar");
