@@ -60,6 +60,7 @@
 	&__main {
 		position: sticky;
 		top: 108px;
+		height: fit-content;
 		width: 100%;
 	}
 
@@ -76,9 +77,6 @@
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 140%; /* 22.4px */
-	}
-
-	&__desc {
 	}
 
 	&__price {
@@ -125,6 +123,10 @@
 			row-gap: 24px;
 			max-width: 831px;
 			margin-left: auto;
+		}
+
+		&-mobile {
+			display: none;
 		}
 
 		&-name {
@@ -309,23 +311,6 @@
 	}
 }
 @media (max-width: 1024px) {
-	.offer {
-		&__spacer {
-			padding: 36px 0;
-		}
-	}
-
-	.similar {
-		&__desc {
-			font-size: 13px;
-			padding: 20px 24px 16px;
-		}
-
-		&__price {
-			padding: 12px 24px;
-		}
-	}
-
 	.mb {
 		&-72 {
 			margin-bottom: 36px;
@@ -337,6 +322,42 @@
 
 		&-64 {
 			margin-bottom: 32px;
+		}
+	}
+
+	.offer {
+		padding-bottom: 36px;
+		&__spacer {
+			padding: 36px 0;
+		}
+
+		&__data {
+			&-desktop {
+				display: none;
+			}
+
+			&-mobile {
+				display: flex;
+			}
+		}
+
+		&__container {
+			flex-direction: column-reverse;
+		}
+
+		&__img {
+			margin-bottom: 0;
+		}
+	}
+
+	.similar {
+		&__desc {
+			font-size: 13px;
+			padding: 20px 24px 16px;
+		}
+
+		&__price {
+			padding: 12px 24px;
 		}
 	}
 }

@@ -538,6 +538,7 @@ html {
 }
 
 body {
+  width: 100vw;
   height: 100%;
   position: relative;
   font-kerning: none;
@@ -589,6 +590,8 @@ img {
   outline: none;
   border: none;
   height: 48px;
+  transition-duration: 0.3s;
+  transition-property: color, border, background-color;
 }
 .btn:hover {
   cursor: pointer;
@@ -601,7 +604,7 @@ img {
   color: #ffffff;
 }
 .btn__primary-black:hover {
-  background: #190f14;
+  background: rgba(25, 15, 20, 0.8);
 }
 .btn__primary-white {
   background-color: #ffffff;
@@ -623,6 +626,7 @@ img {
   color: #190f14;
 }
 .btn__secondary-black:hover {
+  color: rgba(25, 15, 20, 0.8);
   border-color: rgba(25, 15, 20, 0.8);
 }
 .btn__secondary-white {
@@ -945,7 +949,7 @@ img {
     padding: 8px 0;
   }
   .header__nav {
-    position: absolute;
+    position: fixed;
     z-index: 10;
     right: 0;
     top: -8px;
@@ -1122,6 +1126,8 @@ img {
 .offer__main {
   position: sticky;
   top: 108px;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
 }
 .offer__name {
@@ -1170,6 +1176,9 @@ img {
   row-gap: 24px;
   max-width: 831px;
   margin-left: auto;
+}
+.offer__data-mobile {
+  display: none;
 }
 .offer__data-name {
   font-size: 16px;
@@ -1313,16 +1322,6 @@ img {
   }
 }
 @media (max-width: 1024px) {
-  .offer__spacer {
-    padding: 36px 0;
-  }
-  .similar__desc {
-    font-size: 13px;
-    padding: 20px 24px 16px;
-  }
-  .similar__price {
-    padding: 12px 24px;
-  }
   .mb-72 {
     margin-bottom: 36px;
   }
@@ -1331,6 +1330,31 @@ img {
   }
   .mb-64 {
     margin-bottom: 32px;
+  }
+  .offer {
+    padding-bottom: 36px;
+  }
+  .offer__spacer {
+    padding: 36px 0;
+  }
+  .offer__data-desktop {
+    display: none;
+  }
+  .offer__data-mobile {
+    display: flex;
+  }
+  .offer__container {
+    flex-direction: column-reverse;
+  }
+  .offer__img {
+    margin-bottom: 0;
+  }
+  .similar__desc {
+    font-size: 13px;
+    padding: 20px 24px 16px;
+  }
+  .similar__price {
+    padding: 12px 24px;
   }
 }
 @media (max-width: 768px) {

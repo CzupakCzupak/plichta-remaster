@@ -13,6 +13,8 @@
 	outline: none;
 	border: none;
 	height: 48px;
+	transition-duration: 0.3s;
+	transition-property: color, border, background-color;
 	&:hover {
 		cursor: pointer;
 	}
@@ -27,7 +29,7 @@
 			color: $white;
 
 			&:hover {
-				background: $black;
+				background: $black-80;
 			}
 		}
 
@@ -57,6 +59,7 @@
 			color: $black;
 
 			&:hover {
+				color: $black-80;
 				border-color: $black-80;
 			}
 		}

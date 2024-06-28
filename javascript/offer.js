@@ -1,4 +1,4 @@
-let gallery = new Splide(".gallery__splide-js", {
+let gallery = new Splide(".jsGallerySplide", {
 	gap: 16,
 	fixedWidth: 660,
 	perMove: 2,
@@ -15,7 +15,7 @@ let gallery = new Splide(".gallery__splide-js", {
 	},
 });
 
-let galleryBar = document.querySelector(".gallery__progress-bar");
+let galleryBar = document.querySelector(".jsGalleryBar");
 
 console.log();
 
