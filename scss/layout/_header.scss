@@ -23,6 +23,18 @@
 		}
 	}
 
+	&__link {
+		padding: 0 16px;
+		&:hover {
+			color: $orange;
+		}
+		&s {
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 48px; /* 300% */
+		}
+	}
+
 	&__cta {
 		display: flex;
 		gap: 16px;
@@ -63,22 +75,38 @@
 		padding: 8px 0;
 		&__nav {
 			position: fixed;
+			padding-top: 68px;
 			z-index: 10;
 			right: 0;
-			top: -8px;
+			top: 0px;
 			background-color: $white;
 			width: 80%;
 			height: 100vh;
 			transition: 0.3s all;
 			transform: translate(100%);
+			flex-direction: column;
+			justify-content: space-between;
 			&.active {
 				transform: translate(0%);
 			}
 		}
 
+		&__btn {
+			max-width: 232px;
+			width: 100%;
+			justify-content: unset;
+		}
+
+		&__links {
+			flex-direction: column;
+		}
+
 		&__hamburger {
-			display: flex;
-			padding: 8px 16px 0 0;
+			display: block;
+			width: auto;
+			position: absolute;
+			top: 16px;
+			right: 16px;
 		}
 
 		&__mobile {
@@ -89,7 +117,7 @@
 			padding: 12px 24px 24px;
 			width: 100%;
 			flex-direction: column;
-			align-items: end;
+			align-items: start;
 			justify-content: flex-end;
 		}
 		&__logo {

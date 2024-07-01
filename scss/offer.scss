@@ -61,14 +61,8 @@
 		position: sticky;
 		top: 108px;
 		height: fit-content;
+		max-width: 589px;
 		width: 100%;
-	}
-
-	&__name {
-		color: $black;
-		font-size: 50px;
-		font-weight: 800;
-		line-height: 62px; /* 124% */
 	}
 
 	&__desc,
@@ -331,6 +325,12 @@
 			padding: 36px 0;
 		}
 
+		&__desc,
+		&__number {
+			font-size: 14px;
+			line-height: 140%;
+		}
+
 		&__data {
 			&-desktop {
 				display: none;
@@ -338,6 +338,8 @@
 
 			&-mobile {
 				display: flex;
+				max-width: unset;
+				margin: unset;
 			}
 		}
 
@@ -347,6 +349,10 @@
 
 		&__img {
 			margin-bottom: 0;
+		}
+
+		&__main {
+			max-width: unset;
 		}
 	}
 

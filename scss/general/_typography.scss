@@ -29,9 +29,19 @@
 
 @media (max-width: 1024px) {
 	.heading {
+		&__secondary {
+			font-size: 30px;
+			line-height: 36px;
+		}
+
 		&__tertiary {
 			font-size: 24px;
 			line-height: 109%;
+		}
+
+		&__quaternary {
+			font-size: 24px;
+			line-height: 36px;
 		}
 
 		&__quinary {

@@ -109,6 +109,31 @@
 			margin-left: 8px;
 		}
 	}
+
+	&__animation {
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 104px;
+
+		left: 0;
+		z-index: 9;
+		background: #fafaf9;
+		opacity: 0;
+		visibility: hidden;
+		transition-property: opacity, visibility;
+		&.active {
+			opacity: 1;
+			visibility: visible;
+		}
+		&-cont {
+			margin: 0 auto;
+			max-width: 697px;
+			width: 100%;
+		}
+		&-desc {
+		}
+	}
 }
 
 @media (max-width: 1344px) {
@@ -127,6 +152,10 @@
 		&__ask {
 			font-size: 14px;
 			line-height: 30px; /* 214.286% */
+		}
+
+		&__animation {
+			top: 59px;
 		}
 	}
 }
