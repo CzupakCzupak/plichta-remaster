@@ -1,11 +1,19 @@
 .container {
-	max-width: 1466px;
-	margin: 0 auto;
-	width: 100%;
-	padding: 0 15px;
+	max-width: 1468px;
+	padding: 0 16px;
+	&,
 	&-big {
-		max-width: 1920px;
+		margin: 0 auto;
+		width: 100%;
 	}
+	&-big {
+		max-width: 1952px;
+	}
+}
+
+.spacer-64 {
+	padding-top: 64px;
+	padding-bottom: 64px;
 }
 
 .d-f {
@@ -26,6 +34,10 @@
 
 .ai-fe {
 	align-items: flex-end;
+}
+
+.ai-s {
+	align-items: stretch;
 }
 
 .jc-e {
@@ -441,17 +453,23 @@
 	margin: 8px;
 }
 
-.col__ {
-	&2 {
+.col {
+	&__2 {
 		max-width: 50%;
 		flex: 0 0 calc(50% - 8px);
 	}
 
-	&3 {
+	&__3 {
 		max-width: 33.333%;
 		flex: 0 0 33.333%;
 	}
-	&cta {
+
+	&__5 {
+		max-width: 20%;
+		flex: 0 0 20%;
+	}
+
+	&__cta {
 		&-last {
 			margin-left: 8px;
 		}

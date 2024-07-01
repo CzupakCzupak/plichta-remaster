@@ -1,6 +1,23 @@
 .footer {
 	padding: 64px 0 52px;
 	background-color: $black-3;
+
+	&__up {
+		width: 48px;
+		height: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $orange;
+		position: absolute;
+		top: 278px;
+		right: 48px;
+		border-radius: 4px;
+		&:hover {
+			background-color: $orange-hover;
+		}
+	}
+
 	&__row {
 		border-bottom: 1px solid $footer-border-gray;
 		padding-bottom: 54px;
@@ -95,17 +112,6 @@
 	}
 }
 
-// Media do polityki na mobilce
-// @media (max-width: 1400px) {
-// 	.footer {
-// 		&__cookies {
-// 			&-mobile {
-// 				display: flex;
-// 			}
-// 		}
-// 	}
-// }
-
 @media (max-width: 768px) {
 	.footer {
 		padding: 24px 0 40px;
@@ -148,8 +154,9 @@
 	}
 }
 @media (max-width: 576px) {
-}
-@media (max-width: 360px) {
-}
-@media (max-width: 340px) {
+	.footer {
+		&__up {
+			display: none;
+		}
+	}
 }

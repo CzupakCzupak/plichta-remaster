@@ -14,7 +14,12 @@
 	border: none;
 	height: 48px;
 	transition-duration: 0.3s;
-	transition-property: color, border, background-color;
+	transition-property: color, border, fill, background-color;
+	&:disabled {
+		opacity: 0.8;
+		pointer-events: none;
+	}
+
 	&:hover {
 		cursor: pointer;
 	}
@@ -38,7 +43,10 @@
 			color: $black;
 
 			&:hover {
-				color: $white-80;
+				color: $black-80;
+				svg {
+					fill: $black-80;
+				}
 			}
 		}
 
@@ -61,6 +69,9 @@
 			&:hover {
 				color: $black-80;
 				border-color: $black-80;
+				svg {
+					fill: $black-80;
+				}
 			}
 		}
 
@@ -80,7 +91,18 @@
 			color: $orange;
 
 			&:hover {
-				background: $orange-hover;
+				color: $orange-hover;
+				border-color: $orange-hover;
+			}
+		}
+
+		&-kvgreen {
+			background-color: $kv-green;
+			border: 2px solid $white;
+			color: $white;
+
+			&:hover {
+				background-color: $kv-green-80;
 			}
 		}
 	}

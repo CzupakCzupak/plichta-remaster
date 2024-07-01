@@ -1,3 +1,221 @@
+// General
+@import "general/fonts";
+@import "general/variables";
+@import "general/typography";
+@import "general/utilities";
+@import "general/general";
+
+// Components
+@import "components/buttons";
+@import "components/cta";
+
+// Layout
+@import "layout/footer";
+@import "layout/header";
+
+.hero {
+	&__container {
+		background-color: $kv-green;
+		height: 696px;
+	}
+
+	&__img {
+		top: 0;
+		right: 0;
+		padding-left: 16px;
+		max-width: 1194px;
+		height: 100%;
+		z-index: 0;
+	}
+
+	&__subheading {
+		font-size: 32px;
+		line-height: 42px; /* 131.25% */
+	}
+
+	&__text {
+		max-width: 831px;
+		&-box {
+			padding-top: 113px;
+			z-index: 1;
+		}
+	}
+
+	&__configurator {
+		max-width: 1073px;
+		padding: 24px;
+	}
+
+	&__icon {
+		flex-shrink: 0;
+		margin: 5px;
+	}
+
+	&__btn {
+		max-width: 241px;
+		width: 100%;
+	}
+}
+
+.dropdown {
+	padding: 10px 12px 10px 16px;
+	border: 1px solid $border-gray;
+	font-size: 14px;
+	line-height: 30px; /* 214.286% */
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&.active {
+		outline: 2px solid $orange;
+		.dropdown__list {
+			display: flex;
+		}
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 28px; /* 200% */
+	}
+
+	&__box {
+		max-width: 245px;
+	}
+
+	&__list {
+		display: none;
+		position: absolute;
+		border: 1px solid $border-gray;
+		left: 0;
+		top: calc(100% + 12px);
+		width: 100%;
+		padding: 12px;
+		z-index: 9;
+	}
+
+	&__item {
+		padding: 5px 8px;
+		&:hover {
+			cursor: pointer;
+			background-color: $bg-gray;
+		}
+		&-primary {
+		}
+
+		&-separator {
+			padding: 2px auto;
+			margin: 0 8px;
+			width: calc(100% - 4px);
+			height: 1px;
+			background-color: $border-gray;
+		}
+	}
+
+	&__clean {
+		display: none;
+		color: #0f0f0f;
+		font-size: 13px;
+		line-height: 18px; /* 138.462% */
+		&.active {
+			display: flex;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.listing {
+	&__header {
+		font-family: "SEAT BCN";
+		font-size: 30px;
+		font-weight: 800;
+		line-height: 48px; /* 160% */
+	}
+
+	&__sorting {
+		max-width: 350px;
+	}
+
+	&__img {
+		max-width: 468px;
+	}
+
+	&__title {
+		font-size: 22px;
+		line-height: 117%; /* 25.74px */
+	}
+
+	&__product {
+		display: none;
+		&.active {
+			display: flex;
+		}
+		&s {
+		}
+	}
+
+	&__description {
+		border-top: 1px solid $border-gray;
+		border-right: 1px solid $border-gray;
+		border-bottom: 1px solid $border-gray;
+		border-left: unset;
+		padding: 32px;
+	}
+
+	&__state {
+		&-new,
+		&-used {
+			padding: 3px 8px;
+			border-radius: 2px;
+		}
+
+		&-new {
+			background: $black;
+			color: $white;
+		}
+
+		&-used {
+			background: $bg-gray;
+			color: $black;
+		}
+	}
+
+	&__number {
+		color: var(--seat-new-typo-gray, #747468);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 28px; /* 200% */
+	}
+
+	&__attribute {
+		font-size: 14px;
+		line-height: 24px;
+
+		&s {
+			&:not(:last-of-type) {
+				padding-right: 16px;
+			}
+		}
+
+		&-value {
+			font-size: 18px;
+			font-weight: 750;
+			line-height: 24px; /* 133.333% */
+		}
+	}
+
+	&__price {
+		font-size: 30px;
+		line-height: 40px; /* 133.333% */
+		&-type {
+			font-size: 14px;
+			line-height: 28px; /* 200% */
+		}
+	}
+}
+
 @media (max-width: 1344px) {
 }
 @media (max-width: 1200px) {

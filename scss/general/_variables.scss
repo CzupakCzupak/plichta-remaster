@@ -13,36 +13,49 @@ $orange: #ea5d1a;
 $orange-hover: #f08d5f;
 
 $kv-green: #438a9c;
+$kv-green-80: #438a9ccc;
 
 $blue: #00e;
 
 $white: #ffffff;
 $white-80: #ffffffcc;
 
-.clr-white {
-	color: $white;
+.clr {
+	&-white {
+		color: $white;
+	}
+
+	&-white-80 {
+		color: $white-80;
+	}
+
+	&-black {
+		color: $black;
+	}
+
+	&-black-f {
+		color: $black-f;
+	}
+
+	&-blue {
+		color: $blue;
+	}
+
+	&-typo-gray {
+		color: $typo-gray;
+	}
+
+	&-orange {
+		color: $orange;
+	}
 }
 
-.clr-white-80 {
-	color: $white-80;
-}
+.bg {
+	&-kvgreen {
+		background-color: $kv-green;
+	}
 
-.clr-black {
-	color: $black;
-}
-
-.clr-black-f {
-	color: $black-f;
-}
-
-.clr-blue {
-	color: $blue;
-}
-
-.clr-typo-gray {
-	color: $typo-gray;
-}
-
-.clr-orange {
-	color: $orange;
+	&-white {
+		background-color: $white;
+	}
 }
