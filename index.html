@@ -116,12 +116,12 @@
 					</div>
 					<div class="header__links d-f fw-700">
 						<a
-							href="#similar"
+							href="offer.html"
 							class="header__link transition-03 transition-color header__text-white"
 							>Samochody</a
 						>
 						<a
-							href="#maps"
+							href="offer.html#maps"
 							class="header__link transition-03 transition-color header__text-white"
 							>Lokalizacje</a
 						>
@@ -201,7 +201,7 @@
 							</h2>
 						</div>
 						<div class="hero__configurator w-100 d-f fd-c bg-white">
-							<div class="d-f ai-fs jc-fs gap-16 mb-16">
+							<div class="dropdown__container d-f ai-fs jc-fs gap-16 mb-16">
 								<div class="dropdown__box d-f fd-c gap-8 ai-fs w-100">
 									<div class="dropdown__text clr-typo-gray fw-500">Model</div>
 									<div class="dropdown jsDropdown rel bg-white w-100">
@@ -237,10 +237,10 @@
 											<div class="dropdown__item-separator"></div>
 											<div
 												class="dropdown__item jsDropdownItem"
-												data-value="Alhambra"
-												data-custom="alhambra"
+												data-value="Tarraco"
+												data-custom="tarraco"
 											>
-												Alhambra
+												Tarraco
 											</div>
 											<div
 												class="dropdown__item jsDropdownItem"
@@ -445,7 +445,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="d-f ai-c gap-16 w-100 jc-e">
+							<div class="d-f ai-c gap-16 w-100 jc-e hero__configurator-btns">
 								<div class="d-f gap-4 ai-c dropdown__clean fw-500 jsClearFilters">
 									Wyczyść filtry
 									<svg
@@ -480,9 +480,11 @@
 						<h3 class="listing__header clr-black">
 							Znaleziono <span class="clr-orange jsVechicleCount">13</span> pojazdów
 						</h3>
-						<div class="listing__sorting d-f gap-24 ai-c w-100">
+						<div class="listing__sort d-f gap-24 ai-c w-100">
 							<p>Sortowanie</p>
-							<div class="dropdown jsDropdown bg-white w-100">
+							<div
+								class="dropdown jsSortDropdown listing__sort-dropdown rel bg-white w-100"
+							>
 								<div class="d-f w-100 jc-b ai-c fw-700">
 									<div class="jsDropdownValue">Domyślne</div>
 									<svg
@@ -500,90 +502,174 @@
 										/>
 									</svg>
 								</div>
-								<div class="dropdown-list"></div>
+								<div
+									class="dropdown__list jsDropdownList d-f fd-c gap-4 bg-white fw-500"
+								>
+									<div
+										class="dropdown__item dropdown__item-primary jsDropdownItem"
+										data-number="0"
+									>
+										Domyślne
+									</div>
+									<div class="dropdown__item-separator"></div>
+									<div
+										class="dropdown__item jsDropdownItem"
+										data-sort="Najtańsze"
+										data-number="1"
+									>
+										Najtańsze
+									</div>
+									<div
+										class="dropdown__item jsDropdownItem"
+										data-sort="Najdroższe"
+										data-number="2"
+									>
+										Najdroższe
+									</div>
+									<div
+										class="dropdown__item jsDropdownItem"
+										data-sort="Najmłodszy rocznik"
+										data-number="3"
+									>
+										Najmłodszy rocznik
+									</div>
+									<div
+										class="dropdown__item jsDropdownItem"
+										data-sort="Najstarszy rocznik"
+										data-number="4"
+									>
+										Najstarszy rocznik
+									</div>
+									<div
+										class="dropdown__item jsDropdownItem"
+										data-sort="Najmniejszy przebieg"
+										data-number="5"
+									>
+										Najmniejszy przebieg
+									</div>
+									<div
+										class="dropdown__item jsDropdownItem"
+										data-sort="Największy przebieg"
+										data-number="6"
+									>
+										Największy przebieg
+									</div>
+									<div
+										class="dropdown__item jsDropdownItem"
+										data-sort="Najstarsze ogłoszenie"
+										data-number="7"
+									>
+										Najstarsze ogłoszenie
+									</div>
+									<div
+										class="dropdown__item jsDropdownItem"
+										data-sort="Najnowsze ogłoszenie"
+										data-number="8"
+									>
+										Najnowsze ogłoszenie
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="listing__products d-f fd-c gap-24">
+					<div class="listing__products jsListingParent d-f fd-c gap-24">
 						<div
-							class="listing__product jsProduct w-100 d-f w-100 active"
+							class="listing__product rel jsProduct w-100 d-f w-100 active"
 							data-model="leon"
 							data-gearbox="1"
 							data-fuel="0"
 							data-location="0"
+							data-year="2022"
+							data-mileage="7"
+							data-price="130900"
+							data-id="6087716634"
 						>
-							<img
-								src="img/offer-img.png"
-								alt="Product image"
-								width="fit-content"
-								height="auto"
-								class="listing__img w-100"
-							/>
+							<a href="" class="listing__img-box w-100 h-100 o-hidden">
+								<img
+									src="img/home/leonsp.png"
+									alt="Product image"
+									width="100%"
+									height="auto"
+									class="listing__img w-100"
+								/>
+							</a>
 							<div class="listing__description w-100">
-								<div class="listing__title mb-12 fw-800 clr-black">
-									SEAT Leon SP Style 1.5 150KM Automat Kombi
-								</div>
-								<div class="d-f ai-c gap-24 mb-24">
-									<div class="listing__state-new">Nowy</div>
-									<div class="clr-typo-gray">Numer oferty: 6091708456</div>
-									<div class="listing__location d-f gap-8 clr-typo-gray">
-										<svg
-											width="25"
-											height="24"
-											viewBox="0 0 25 24"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<g id="icons/24x24/localisation">
-												<g id="Vector">
-													<path
-														d="M12.7498 9.5C11.9213 9.5 11.2498 10.1716 11.2498 11V11.01C11.2498 11.8384 11.9213 12.51 12.7498 12.51H12.7598C13.5882 12.51 14.2598 11.8384 14.2598 11.01V11C14.2598 10.1716 13.5882 9.5 12.7598 9.5H12.7498Z"
-														fill="#190F14"
-													/>
-													<path
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M18.4569 5.29365C15.3049 2.1417 10.1946 2.1417 7.04267 5.29365C3.89073 8.4456 3.89072 13.5559 7.04267 16.7079L12.7498 22.415L18.4569 16.7079C21.6088 13.5559 21.6088 8.4456 18.4569 5.29365ZM8.45689 6.70786C10.8278 4.33696 14.6718 4.33696 17.0427 6.70786C19.4136 9.07876 19.4136 12.9228 17.0427 15.2937L12.7498 19.5865L8.45689 15.2936C6.08598 12.9227 6.08599 9.07876 8.45689 6.70786Z"
-														fill="#190F14"
-													/>
+								<div class="listing__box-top">
+									<a
+										href=""
+										class="listing__title transition-03 transition-color mb-12 fw-800 clr-black"
+									>
+										SEAT Leon
+										<span class="d-n--lg">SP Style 1.5 150KM Automat Kombi</span>
+									</a>
+									<div class="d-f ai-c gap-24 mb-24 mb-0--lg">
+										<div class="listing__state-new fw-500">Nowy</div>
+										<div class="clr-typo-gray d-n--lg">Numer oferty: 6087716634</div>
+										<div class="listing__location d-f gap-8 clr-typo-gray ai-c d-n--lg">
+											<svg
+												width="25"
+												height="24"
+												viewBox="0 0 25 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g id="icons/24x24/localisation">
+													<g id="Vector">
+														<path
+															d="M12.7498 9.5C11.9213 9.5 11.2498 10.1716 11.2498 11V11.01C11.2498 11.8384 11.9213 12.51 12.7498 12.51H12.7598C13.5882 12.51 14.2598 11.8384 14.2598 11.01V11C14.2598 10.1716 13.5882 9.5 12.7598 9.5H12.7498Z"
+															fill="#190F14"
+														/>
+														<path
+															fill-rule="evenodd"
+															clip-rule="evenodd"
+															d="M18.4569 5.29365C15.3049 2.1417 10.1946 2.1417 7.04267 5.29365C3.89073 8.4456 3.89072 13.5559 7.04267 16.7079L12.7498 22.415L18.4569 16.7079C21.6088 13.5559 21.6088 8.4456 18.4569 5.29365ZM8.45689 6.70786C10.8278 4.33696 14.6718 4.33696 17.0427 6.70786C19.4136 9.07876 19.4136 12.9228 17.0427 15.2937L12.7498 19.5865L8.45689 15.2936C6.08598 12.9227 6.08599 9.07876 8.45689 6.70786Z"
+															fill="#190F14"
+														/>
+													</g>
 												</g>
-											</g>
-										</svg>
-										Gdańsk
+											</svg>
+											Gdańsk
+										</div>
+									</div>
+									<div class="listing__attribute-value mb-8 d-b--lg">
+										SEAT Leon SP Style 1.5 150KM Automat Kombi
+									</div>
+									<div class="row mb-41">
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Rok produkcji
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">2022</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Przebieg
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">
+												7&nbsp;km
+											</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">Moc</div>
+											<div class="listing__attribute-value fw-800 clr-black">
+												110&nbsp;KM
+											</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Rodzaj paliwa
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">Benzyna</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Skrzynia
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">Automat</div>
+										</div>
 									</div>
 								</div>
-								<div class="row mb-41">
-									<div class="col__5 listing__attributes">
-										<div class="listing__attribute fw-500 clr-typo-gray mb-8">
-											Rok produkcji
-										</div>
-										<div class="listing__attribute-value fw-800 clr-black">2022</div>
-									</div>
-									<div class="col__5 listing__attributes">
-										<div class="listing__attribute fw-500 clr-typo-gray mb-8">
-											Przebieg
-										</div>
-										<div class="listing__attribute-value fw-800 clr-black">7&nbsp;km</div>
-									</div>
-									<div class="col__5 listing__attributes">
-										<div class="listing__attribute fw-500 clr-typo-gray mb-8">Moc</div>
-										<div class="listing__attribute-value fw-800 clr-black">
-											150&nbsp;KM
-										</div>
-									</div>
-									<div class="col__5 listing__attributes">
-										<div class="listing__attribute fw-500 clr-typo-gray mb-8">
-											Rodzaj paliwa
-										</div>
-										<div class="listing__attribute-value fw-800 clr-black">Benzyna</div>
-									</div>
-									<div class="col__5 listing__attributes">
-										<div class="listing__attribute fw-500 clr-typo-gray mb-8">
-											Skrzynia
-										</div>
-										<div class="listing__attribute-value fw-800 clr-black">Automat</div>
-									</div>
-								</div>
+
 								<div class="d-f ai-c jc-b w-100">
 									<div class="listing__pricing">
 										<div class="listing__price-type clr-black fw-500">Cena Brutto</div>
@@ -591,12 +677,488 @@
 											130&nbsp;900&nbsp;zł
 										</div>
 									</div>
-									<a class="btn btn__secondary-orange">Sprawdź ofertę</a>
+									<a href="" class="btn btn__secondary-orange listing__btn"
+										>Sprawdź ofertę</a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							class="listing__product rel jsProduct w-100 d-f w-100 active"
+							data-model="arona"
+							data-gearbox="1"
+							data-fuel="0"
+							data-location="0"
+							data-year="2024"
+							data-mileage="10"
+							data-price="105100"
+							data-id="6191708456"
+						>
+							<a href="" class="listing__img-box w-100 h-100 o-hidden">
+								<img
+									src="img/home/arona.png"
+									alt="Product image"
+									width="100%"
+									height="auto"
+									class="listing__img w-100"
+								/>
+							</a>
+							<div class="listing__description w-100">
+								<div class="listing__box-top">
+									<a
+										href=""
+										class="listing__title transition-03 transition-color mb-12 fw-800 clr-black"
+									>
+										SEAT Arona
+										<span class="d-n--lg"
+											>Full LED 1.0 TSI 110 KM Automat/ Czujniki parkowania z tyłu</span
+										>
+									</a>
+									<div class="d-f ai-c gap-24 mb-24 mb-0--lg">
+										<div class="listing__state-used fw-500">Używany</div>
+										<div class="clr-typo-gray d-n--lg">Numer oferty: 6191708456</div>
+										<div class="listing__location d-f ai-c gap-8 clr-typo-gray d-n--lg">
+											<svg
+												width="25"
+												height="24"
+												viewBox="0 0 25 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g id="icons/24x24/localisation">
+													<g id="Vector">
+														<path
+															d="M12.7498 9.5C11.9213 9.5 11.2498 10.1716 11.2498 11V11.01C11.2498 11.8384 11.9213 12.51 12.7498 12.51H12.7598C13.5882 12.51 14.2598 11.8384 14.2598 11.01V11C14.2598 10.1716 13.5882 9.5 12.7598 9.5H12.7498Z"
+															fill="#190F14"
+														/>
+														<path
+															fill-rule="evenodd"
+															clip-rule="evenodd"
+															d="M18.4569 5.29365C15.3049 2.1417 10.1946 2.1417 7.04267 5.29365C3.89073 8.4456 3.89072 13.5559 7.04267 16.7079L12.7498 22.415L18.4569 16.7079C21.6088 13.5559 21.6088 8.4456 18.4569 5.29365ZM8.45689 6.70786C10.8278 4.33696 14.6718 4.33696 17.0427 6.70786C19.4136 9.07876 19.4136 12.9228 17.0427 15.2937L12.7498 19.5865L8.45689 15.2936C6.08598 12.9227 6.08599 9.07876 8.45689 6.70786Z"
+															fill="#190F14"
+														/>
+													</g>
+												</g>
+											</svg>
+											Gdańsk
+										</div>
+									</div>
+									<div class="listing__attribute-value mb-8 d-b--lg">
+										SEAT Arona Full LED 1.0 TSI 110 KM Automat/ Czujniki parkowania z tyłu
+									</div>
+									<div class="row mb-41">
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Rok produkcji
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">2024</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Przebieg
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">
+												10&nbsp;km
+											</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">Moc</div>
+											<div class="listing__attribute-value fw-800 clr-black">
+												150&nbsp;KM
+											</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Rodzaj paliwa
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">Benzyna</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Skrzynia
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">Automat</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="d-f ai-c jc-b w-100">
+									<div class="listing__pricing">
+										<div class="listing__price-type clr-black fw-500">Cena Brutto</div>
+										<div class="listing__price clr-orange fw-800">
+											105&nbsp;100&nbsp;zł
+										</div>
+									</div>
+									<a href="" class="btn btn__secondary-orange listing__btn"
+										>Sprawdź ofertę</a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							class="listing__product rel jsProduct w-100 d-f w-100 active"
+							data-model="ateca"
+							data-gearbox="0"
+							data-fuel="1"
+							data-location="2"
+							data-year="2023"
+							data-mileage="1"
+							data-price="145100"
+							data-id="6187716634"
+						>
+							<a href="" class="listing__img-box w-100 h-100 o-hidden">
+								<img
+									src="img/home/ateca.png"
+									alt="Product image"
+									width="100%"
+									height="auto"
+									class="listing__img w-100"
+								/>
+							</a>
+							<div class="listing__description w-100">
+								<div class="listing__box-top">
+									<a
+										href=""
+										class="listing__title transition-03 transition-color mb-12 fw-800 clr-black"
+									>
+										SEAT Ateca <span class="d-n--lg">2.0 TDI 177KM</span>
+									</a>
+									<div class="d-f ai-c gap-24 mb-24 mb-0--lg">
+										<div class="listing__state-new fw-500">Nowy</div>
+										<div class="clr-typo-gray d-n--lg">Numer oferty: 6187716634</div>
+										<div class="listing__location d-f gap-8 clr-typo-gray ai-c d-n--lg">
+											<svg
+												width="25"
+												height="24"
+												viewBox="0 0 25 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g id="icons/24x24/localisation">
+													<g id="Vector">
+														<path
+															d="M12.7498 9.5C11.9213 9.5 11.2498 10.1716 11.2498 11V11.01C11.2498 11.8384 11.9213 12.51 12.7498 12.51H12.7598C13.5882 12.51 14.2598 11.8384 14.2598 11.01V11C14.2598 10.1716 13.5882 9.5 12.7598 9.5H12.7498Z"
+															fill="#190F14"
+														/>
+														<path
+															fill-rule="evenodd"
+															clip-rule="evenodd"
+															d="M18.4569 5.29365C15.3049 2.1417 10.1946 2.1417 7.04267 5.29365C3.89073 8.4456 3.89072 13.5559 7.04267 16.7079L12.7498 22.415L18.4569 16.7079C21.6088 13.5559 21.6088 8.4456 18.4569 5.29365ZM8.45689 6.70786C10.8278 4.33696 14.6718 4.33696 17.0427 6.70786C19.4136 9.07876 19.4136 12.9228 17.0427 15.2937L12.7498 19.5865L8.45689 15.2936C6.08598 12.9227 6.08599 9.07876 8.45689 6.70786Z"
+															fill="#190F14"
+														/>
+													</g>
+												</g>
+											</svg>
+											Bydgoszcz
+										</div>
+									</div>
+									<div class="listing__attribute-value mb-8 d-b--lg">
+										SEAT Ateca 2.0 TDI 177KM
+									</div>
+									<div class="row mb-41">
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Rok produkcji
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">2023</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Przebieg
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">
+												1&nbsp;km
+											</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">Moc</div>
+											<div class="listing__attribute-value fw-800 clr-black">
+												177&nbsp;KM
+											</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Rodzaj paliwa
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">Diesel</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Skrzynia
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">Manualna</div>
+										</div>
+									</div>
+								</div>
+								<div class="d-f ai-c jc-b w-100">
+									<div class="listing__pricing">
+										<div class="listing__price-type clr-black fw-500">Cena Brutto</div>
+										<div class="listing__price clr-orange fw-800">
+											145&nbsp;100&nbsp;zł
+										</div>
+									</div>
+									<a href="" class="btn btn__secondary-orange listing__btn"
+										>Sprawdź ofertę</a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							class="listing__product rel jsProduct w-100 d-f w-100 active"
+							data-model="leon"
+							data-gearbox="1"
+							data-fuel="0"
+							data-location="0"
+							data-year="2022"
+							data-mileage="7"
+							data-price="130900"
+							data-id="6087716635"
+						>
+							<a href="" class="listing__img-box w-100 h-100 o-hidden">
+								<img
+									src="img/home/leonsp.png"
+									alt="Product image"
+									width="100%"
+									height="auto"
+									class="listing__img w-100"
+								/>
+							</a>
+							<div class="listing__description w-100">
+								<div class="listing__box-top">
+									<a
+										href=""
+										class="listing__title transition-03 transition-color mb-12 fw-800 clr-black"
+									>
+										SEAT Leon
+										<span class="d-n--lg">SP Style 1.5 150KM Automat Kombi</span>
+									</a>
+									<div class="d-f ai-c gap-24 mb-24 mb-0--lg">
+										<div class="listing__state-new fw-500">Nowy</div>
+										<div class="clr-typo-gray d-n--lg">Numer oferty: 6087716635</div>
+										<div class="listing__location d-f gap-8 clr-typo-gray ai-c d-n--lg">
+											<svg
+												width="25"
+												height="24"
+												viewBox="0 0 25 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g id="icons/24x24/localisation">
+													<g id="Vector">
+														<path
+															d="M12.7498 9.5C11.9213 9.5 11.2498 10.1716 11.2498 11V11.01C11.2498 11.8384 11.9213 12.51 12.7498 12.51H12.7598C13.5882 12.51 14.2598 11.8384 14.2598 11.01V11C14.2598 10.1716 13.5882 9.5 12.7598 9.5H12.7498Z"
+															fill="#190F14"
+														/>
+														<path
+															fill-rule="evenodd"
+															clip-rule="evenodd"
+															d="M18.4569 5.29365C15.3049 2.1417 10.1946 2.1417 7.04267 5.29365C3.89073 8.4456 3.89072 13.5559 7.04267 16.7079L12.7498 22.415L18.4569 16.7079C21.6088 13.5559 21.6088 8.4456 18.4569 5.29365ZM8.45689 6.70786C10.8278 4.33696 14.6718 4.33696 17.0427 6.70786C19.4136 9.07876 19.4136 12.9228 17.0427 15.2937L12.7498 19.5865L8.45689 15.2936C6.08598 12.9227 6.08599 9.07876 8.45689 6.70786Z"
+															fill="#190F14"
+														/>
+													</g>
+												</g>
+											</svg>
+											Gdańsk
+										</div>
+									</div>
+									<div class="listing__attribute-value mb-8 d-b--lg">
+										Seat Leon SP Style 1.5 150KM Automat Kombi
+									</div>
+									<div class="row mb-41">
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Rok produkcji
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">2022</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Przebieg
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">
+												7&nbsp;km
+											</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">Moc</div>
+											<div class="listing__attribute-value fw-800 clr-black">
+												110&nbsp;KM
+											</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Rodzaj paliwa
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">Benzyna</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Skrzynia
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">Automat</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="d-f ai-c jc-b w-100">
+									<div class="listing__pricing">
+										<div class="listing__price-type clr-black fw-500">Cena Brutto</div>
+										<div class="listing__price clr-orange fw-800">
+											130&nbsp;900&nbsp;zł
+										</div>
+									</div>
+									<a href="" class="btn btn__secondary-orange listing__btn"
+										>Sprawdź ofertę</a
+									>
+								</div>
+							</div>
+						</div>
+						<div
+							class="listing__product rel jsProduct w-100 d-f w-100 active"
+							data-model="tarraco"
+							data-gearbox="2"
+							data-fuel="0"
+							data-location="1"
+							data-year="2022"
+							data-mileage="7"
+							data-price="190900"
+							data-id="6087716636"
+						>
+							<a href="" class="listing__img-box w-100 h-100 o-hidden">
+								<img
+									src="img/home/tarraco.png"
+									alt="Product image"
+									width="100%"
+									height="auto"
+									class="listing__img w-100"
+								/>
+							</a>
+							<div class="listing__description w-100">
+								<div class="listing__box-top">
+									<a
+										href=""
+										class="listing__title transition-03 transition-color mb-12 fw-800 clr-black"
+									>
+										SEAT Tarraco<span class="d-n--lg">
+											Style 3.0 270KM Skrzynia dwusprzęgłowa Kombi</span
+										>
+									</a>
+									<div class="d-f ai-c gap-24 mb-24 mb-0--lg">
+										<div class="listing__state-new fw-500">Nowy</div>
+										<div class="clr-typo-gray d-n--lg">Numer oferty: 6087716636</div>
+										<div class="listing__location d-f gap-8 clr-typo-gray ai-c d-n--lg">
+											<svg
+												width="25"
+												height="24"
+												viewBox="0 0 25 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g id="icons/24x24/localisation">
+													<g id="Vector">
+														<path
+															d="M12.7498 9.5C11.9213 9.5 11.2498 10.1716 11.2498 11V11.01C11.2498 11.8384 11.9213 12.51 12.7498 12.51H12.7598C13.5882 12.51 14.2598 11.8384 14.2598 11.01V11C14.2598 10.1716 13.5882 9.5 12.7598 9.5H12.7498Z"
+															fill="#190F14"
+														/>
+														<path
+															fill-rule="evenodd"
+															clip-rule="evenodd"
+															d="M18.4569 5.29365C15.3049 2.1417 10.1946 2.1417 7.04267 5.29365C3.89073 8.4456 3.89072 13.5559 7.04267 16.7079L12.7498 22.415L18.4569 16.7079C21.6088 13.5559 21.6088 8.4456 18.4569 5.29365ZM8.45689 6.70786C10.8278 4.33696 14.6718 4.33696 17.0427 6.70786C19.4136 9.07876 19.4136 12.9228 17.0427 15.2937L12.7498 19.5865L8.45689 15.2936C6.08598 12.9227 6.08599 9.07876 8.45689 6.70786Z"
+															fill="#190F14"
+														/>
+													</g>
+												</g>
+											</svg>
+											Gdynia
+										</div>
+									</div>
+									<div class="listing__attribute-value mb-8 d-b--lg">
+										SEAT Tarraco Style 3.0 270KM Skrzynia dwusprzęgłowa Kombi
+									</div>
+									<div class="row mb-41">
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Rok produkcji
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">2022</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Przebieg
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">
+												7&nbsp;km
+											</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">Moc</div>
+											<div class="listing__attribute-value fw-800 clr-black">
+												110&nbsp;KM
+											</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Rodzaj paliwa
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">Benzyna</div>
+										</div>
+										<div class="col__5 listing__attributes">
+											<div class="listing__attribute fw-500 clr-typo-gray mb-8">
+												Skrzynia
+											</div>
+											<div class="listing__attribute-value fw-800 clr-black">(DSG)</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="d-f ai-c jc-b w-100">
+									<div class="listing__pricing">
+										<div class="listing__price-type clr-black fw-500">Cena Brutto</div>
+										<div class="listing__price clr-orange fw-800">
+											190&nbsp;900&nbsp;zł
+										</div>
+									</div>
+									<a href="" class="btn btn__secondary-orange listing__btn"
+										>Sprawdź ofertę</a
+									>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="listing__pagination"></div>
+					<div class="pagination fw-500 d-f gap-12 ai-c jc-c">
+						<div class="pagination__sqr d-f ai-c jc-c pagination-first">
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 20 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class="shrink-0 pagination__svg"
+							>
+								<path
+									d="M12.5575 6.5575L11.5 5.5L7 10L11.5 14.5L12.5575 13.4425L9.1225 10L12.5575 6.5575Z"
+								/>
+							</svg>
+						</div>
+						<div class="pagination__sqr d-f ai-c jc-c">2</div>
+						<div class="pagination__sqr d-f ai-c jc-c active">3</div>
+						<div class="pagination__sqr d-f ai-c jc-c">4</div>
+						<div class="pagination__sqr d-f ai-c jc-c">5</div>
+						<div class="pagination__sqr d-f ai-c jc-c pagination-last">
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 20 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class="shrink-0 pagination__svg"
+							>
+								<path
+									d="M8.5 5.5L7.4425 6.5575L10.8775 10L7.4425 13.4425L8.5 14.5L13 10L8.5 5.5Z"
+								/>
+							</svg>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="cta rel" id="cta">

@@ -1,4 +1,4 @@
-let gallery = new Splide(".jsGallerySplide", {
+const gallery = new Splide(".jsGallerySplide", {
 	gap: 16,
 	fixedWidth: 660,
 	perMove: 2,
@@ -15,13 +15,11 @@ let gallery = new Splide(".jsGallerySplide", {
 	},
 });
 
-let galleryBar = document.querySelector(".jsGalleryBar");
-
-console.log();
+const galleryBar = document.querySelector(".jsGalleryBar");
 
 gallery.on("mounted move", function () {
-	var end = gallery.Components.Controller.getEnd() + 1;
-	var rate = Math.min((gallery.index + 1) / end, 1);
+	const end = gallery.Components.Controller.getEnd() + 1;
+	const rate = Math.min((gallery.index + 1) / end, 1);
 	galleryBar.style.width = String(100 * rate) + "%";
 });
 

@@ -86,7 +86,6 @@ if (scrollingLinks) {
 							left: 0,
 							behavior: "smooth",
 						});
-
 						if (nav.classList.contains("active")) {
 							nav.classList.remove("active");
 							shadow.classList.remove("active");
@@ -100,6 +99,7 @@ if (scrollingLinks) {
 					}
 				}
 			}
+			console.log(nav.classList.contains("active"));
 		})
 	);
 }

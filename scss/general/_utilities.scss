@@ -515,6 +515,19 @@
 	}
 }
 
+.d-b--lg {
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	.d-b--lg {
+		display: block;
+	}
+	.mb-0--lg {
+		margin-bottom: 0;
+	}
+}
+
 @media (max-width: 768px) {
 	.md {
 		&--col__2 {

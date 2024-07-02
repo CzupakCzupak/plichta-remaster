@@ -1,19 +1,4 @@
-// General
-@import "general/fonts";
-@import "general/variables";
-@import "general/typography";
-@import "general/utilities";
-@import "general/general";
-
-// Components
-@import "components/buttons";
-@import "components/cta";
-
-// Layout
-@import "layout/footer";
-@import "layout/header";
-@import "layout/maps";
-@import "layout/clause";
+@import "./layout/main";
 
 .offer {
 	position: relative;
@@ -48,8 +33,8 @@
 
 	&__container {
 		margin: 0 auto;
-		padding: 0 16px;
-		max-width: 1888px;
+		padding: 0 32px;
+		max-width: 1920px;
 		width: 100%;
 	}
 
@@ -59,7 +44,8 @@
 		opacity: 0.6;
 		font-size: 16px;
 		line-height: 125%; /* 20px */
-		transition: 0.3s all;
+		transition-duration: 0.3s;
+		transition-property: border, opacity;
 		display: inline-block;
 		&.active {
 			border-bottom: 2px solid $black;
@@ -190,6 +176,10 @@
 		&-list {
 			display: flex;
 		}
+
+		.splide__track {
+			overflow: visible;
+		}
 	}
 
 	&__container {
@@ -223,6 +213,16 @@
 		height: 2px;
 		transition: width 0.3s ease;
 		width: 0;
+	}
+
+	&__img {
+		transition: 0.3s box-shadow;
+		&:hover {
+			cursor: pointer;
+		}
+		&:active {
+			box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+		}
 	}
 }
 
@@ -302,7 +302,13 @@
 }
 
 @media (max-width: 1344px) {
+	.offer {
+		&__container {
+			padding: 0 16px;
+		}
+	}
 }
+
 @media (max-width: 1200px) {
 	.offer {
 		&__box {
@@ -344,6 +350,11 @@
 
 	.offer {
 		padding-bottom: 36px;
+		&__box {
+			&-big {
+				padding: 20px;
+			}
+		}
 		&__spacer {
 			padding: 36px 0;
 		}

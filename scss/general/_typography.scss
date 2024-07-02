@@ -29,6 +29,11 @@
 
 @media (max-width: 1024px) {
 	.heading {
+		&__primary {
+			font-size: 48px;
+			line-height: 109%;
+		}
+
 		&__secondary {
 			font-size: 30px;
 			line-height: 36px;
