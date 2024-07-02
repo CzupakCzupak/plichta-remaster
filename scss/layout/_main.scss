@@ -71,6 +71,7 @@
 	&__mobile {
 		display: none;
 		gap: 4px;
+		height: 40px;
 	}
 
 	&__hamburger {
@@ -182,8 +183,7 @@
 	}
 
 	&__social {
-		&s {
-		}
+		margin: 8px;
 
 		fill: $white;
 		&:hover {

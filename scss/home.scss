@@ -107,6 +107,7 @@
 	}
 
 	&__clean {
+		padding: 6px 0;
 		display: none;
 		color: #0f0f0f;
 		font-size: 13px;
@@ -282,10 +283,6 @@
 		&__subheading {
 			margin-bottom: 32px;
 		}
-
-		&__configurator {
-			margin-bottom: 32px;
-		}
 	}
 
 	.listing {
@@ -416,6 +413,7 @@
 				left: -16px;
 			}
 			&-dropdown {
+				height: 48px;
 				max-width: 242px;
 			}
 		}
@@ -458,10 +456,6 @@
 			font-size: 13px;
 			line-height: 24px; /* 184.615% */
 		}
-
-		&__clean {
-			margin-top: 20px;
-		}
 	}
 
 	.listing {
@@ -476,6 +470,7 @@
 			&-btns {
 				flex-direction: column-reverse;
 				align-items: center;
+				gap: 20px;
 			}
 		}
 

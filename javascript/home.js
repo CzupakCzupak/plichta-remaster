@@ -268,11 +268,10 @@ sortDropdown.addEventListener("click", (e) => {
 				originalListOrder.forEach((item) => {
 					sortingTab.push(parseInt(item.dataset.id));
 				});
-				sortingTab = sortingTab
-					.sort(function (a, b) {
-						return a - b;
-					})
-					.reverse();
+				sortingTab = sortingTab.sort(function (a, b) {
+					return a - b;
+				});
+
 				sortingTab.forEach((item) => {
 					const newEl = document.querySelector(`[data-id="${item}"]`);
 					listingParent.appendChild(newEl);
@@ -282,9 +281,11 @@ sortDropdown.addEventListener("click", (e) => {
 				originalListOrder.forEach((item) => {
 					sortingTab.push(parseInt(item.dataset.id));
 				});
-				sortingTab = sortingTab.sort(function (a, b) {
-					return a - b;
-				});
+				sortingTab = sortingTab
+					.sort(function (a, b) {
+						return a - b;
+					})
+					.reverse();
 				sortingTab.forEach((item) => {
 					const newEl = document.querySelector(`[data-id="${item}"]`);
 					listingParent.appendChild(newEl);

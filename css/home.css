@@ -1011,6 +1011,7 @@ img {
 .header__mobile {
   display: none;
   gap: 4px;
+  height: 40px;
 }
 .header__hamburger {
   display: none;
@@ -1108,6 +1109,7 @@ img {
   max-width: 163px;
 }
 .footer__social {
+  margin: 8px;
   fill: #ffffff;
 }
 .footer__social:hover {
@@ -1326,6 +1328,7 @@ img {
   background-color: #e8e8e8;
 }
 .dropdown__clean {
+  padding: 6px 0;
   display: none;
   color: #0f0f0f;
   font-size: 13px;
@@ -1471,9 +1474,6 @@ img {
   .hero__subheading {
     margin-bottom: 32px;
   }
-  .hero__configurator {
-    margin-bottom: 32px;
-  }
   .listing__attribute {
     display: none;
   }
@@ -1573,6 +1573,7 @@ img {
     left: -16px;
   }
   .listing__sort-dropdown {
+    height: 48px;
     max-width: 242px;
   }
   .pagination {
@@ -1604,9 +1605,6 @@ img {
     font-size: 13px;
     line-height: 24px; /* 184.615% */
   }
-  .dropdown__clean {
-    margin-top: 20px;
-  }
   .listing__btn {
     display: none;
   }
@@ -1615,6 +1613,7 @@ img {
   .hero__configurator-btns {
     flex-direction: column-reverse;
     align-items: center;
+    gap: 20px;
   }
   .hero__btn {
     max-width: unset;

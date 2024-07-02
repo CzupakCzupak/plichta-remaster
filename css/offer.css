@@ -1012,6 +1012,7 @@ img {
 .header__mobile {
   display: none;
   gap: 4px;
+  height: 40px;
 }
 .header__hamburger {
   display: none;
@@ -1109,6 +1110,7 @@ img {
   max-width: 163px;
 }
 .footer__social {
+  margin: 8px;
   fill: #ffffff;
 }
 .footer__social:hover {
