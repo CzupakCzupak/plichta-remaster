@@ -236,6 +236,8 @@
 		border-radius: 2px;
 		border: 1px solid $border-gray;
 		background-color: $white;
+		transition-duration: 0.3s;
+		transition-property: color, background-color, box-shadow, border-color;
 		&.active {
 			background-color: $orange;
 			border-color: $orange;
@@ -250,6 +252,9 @@
 			.pagination__svg {
 				fill: $white;
 			}
+		}
+		&:active {
+			box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.2);
 		}
 	}
 
